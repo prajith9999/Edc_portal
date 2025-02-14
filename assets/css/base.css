@@ -1,0 +1,189 @@
+@import "./avenir-lt-std-fonts.css";
+
+:root {
+    /* Colors */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-black-light: #00000090;
+    --color-modal-popup: #111111;
+    --color-primary: #4578be;
+    --color-secondary: #3663b4;
+    --color-secondary-hover: #2a58ad;
+    --color-secondary-hover-light: #eaeff9;
+    --color-accent: #003465;
+    /* --color-accent-hover: #00346590; */
+    --color-accent-hover: #0c4594;
+    --color-gray-text: #8c8c8c;
+    --color-gray-line: #c4c4c4;
+    --color-gray-cancel: #dbdbdb;
+    --color-gray-cancel-hover: #cccccc;
+    --color-gray-cancel-text: #696969;
+    --color-gray-background: #f3f5f8;
+    --color-placeholder: #757575;
+    --color-border: #c2c2c2;
+    --color-success: #22bb33;
+    --color-error: #bb2124;
+    --color-error-hover: #b82f31;
+    /* --color-error: #fe312c; */
+    --color-warning: #f0ad4e;
+    --color-raised: #bb2124;
+    --color-cancelled: #ea580c;
+    --color-info: #5bc0de;
+    --color-active-tab: #086cb3;
+    --color-tab-header: #444444;
+    /* tooltip color: #5e5d5d */
+    --color-disabled: #c0c0c0;
+    --color-disabled-alternative: #efefef4d;
+    --color-badge-border: #8f939f;
+    --color-audit-trial-background: #f9f9f9;
+    --color-updated-reason: #ffb800;
+    --color-reviewed-reason: #18ab00;
+    --color-approved-reason: #7fc008;
+    --color-table-hover: #f3f4f6;
+    --color-menu-arrow-border: #cfcfcf;
+    --color-locked: #fd6d75;
+    --color-donut-shade-1: #8ab7ff;
+    --color-donut-shade-2: #5a8cdd;
+    --color-donut-shade-3: #2d66c1;
+    --color-donut-shade-4: #1e57b3;
+    --color-donut-shade-5: #143c7d;
+    --color-donut-shade-6: #0a1a34;
+    --color-report-grid: #ececec;
+    --color-report-filter-active: #0a0a0a;
+    --color-report-heading: #828282;
+    --color-accordion-header: #f1f1f1;
+    --color-answered: #a855f7;
+    --color-table-header: #00008b;
+    --color-planned: #fcd34d;
+    /* Fonts */
+    --text-10: 1rem;
+    --text-11: 1.1rem;
+    --text-12: 1.2rem;
+    --text-13: 1.3rem;
+    --text-14: 1.4rem;
+    --text-15: 1.5rem;
+    --text-16: 1.6rem;
+    --text-18: 1.8rem;
+    --text-24: 2.4rem;
+    --text-30: 3rem;
+    --text-48: 4.8rem;
+    /* dimension */
+    --border-radius-2: 0.2rem;
+    --border-radius-3: 0.3rem;
+    --border-radius-4: 0.4rem;
+    --border-radius-5: 0.5rem;
+    --border-radius-6: 0.6rem;
+    --border-radius-10: 1rem;
+    --border-radius-16: 1.6rem;
+    --border-radius-20: 2rem;
+    /* font-family */
+    --main-font: "Avenir LT Std Book", "Helvetica", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    color: var(--color-black);
+    background: var(--color-white);
+    transition:
+        color 0.5s,
+        background-color 0.5s;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.6rem;
+    font-family: var(--main-font);
+    overflow-x: hidden;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-primary);
+}
+
+:link {
+    color: #0000ee;
+}
+
+:visited {
+    color: #551a8b;
+}
+
+/* .box-shadow {
+    box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.15),
+        0 2px 2px rgba(0, 0, 0, 0.15),
+        0 4px 4px rgba(0, 0, 0, 0.15),
+        0 8px 8px rgba(0, 0, 0, 0.15);
+} */
+.box-shadow {
+    box-shadow:
+        0 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.box-shadow-footer {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px -3px 6px;
+}
+.box-shadow-sidebar {
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.box-shadow-mild {
+    box-shadow:
+        0 2px 4px 0 rgba(0, 0, 0, 0.13),
+        0 1px 1px 0 rgba(0, 0, 0, 0.11);
+}
+.box-shadow-table-frozen-column {
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.box-shadow-all-sides {
+    box-shadow:
+        rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+/* Disabled state */
+*[disabled] {
+    pointer-events: none;
+}
+
+div[disabled] {
+    /* background-color: rgba(239, 239, 239, 0.3); */
+    background-color: var(--color-disabled-alternative);
+}
+/* Disabled state */

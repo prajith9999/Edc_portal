@@ -1,0 +1,86 @@
+/* Form Input */
+.input-label {
+    font-weight: 400;
+    line-height: 2rem;
+    margin: 0 0 0.5rem 0;
+    text-align: left;
+    width: fit-content !important;
+}
+.input-value {
+    font-weight: 400;
+}
+
+.form-input {
+    @apply transition-all;
+    border-radius: var(--border-radius-6);
+    padding: 0.6rem 1.2rem;
+    outline: none;
+    width: 100%;
+    border: 0.1rem solid var(--color-border);
+}
+.form-input::placeholder {
+    font-size: var(--text-11);
+    font-weight: 400;
+    line-height: 2rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--color-placeholder);
+}
+.form-input:focus {
+    border: 0.1rem solid var(--color-secondary) !important;
+    /* border: 0.15rem solid #4169e1 !important; */
+}
+input.admin-input-font::placeholder,
+textarea.admin-input-font::placeholder {
+    font-size: var(--text-12);
+}
+
+.readonly-form-input {
+    border: 0.1rem solid transparent;
+}
+
+.readonly-form-input:focus {
+    border: 0.1rem solid transparent !important;
+}
+
+.radio-input {
+    @apply transition-all;
+    accent-color: var(--color-primary) !important;
+}
+.radio-input:focus {
+    /* border-color: var(--color-secondary); */
+    /* FIXME: check how outline should be */
+    /* outline: 0; */
+    /* box-shadow: 0 0 0 0.05rem var(--color-secondary); */
+}
+
+input[disabled] {
+    background-color: transparent;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Chrome */
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+/* Firefox */
+/* Form Input */
+
+/* Media queries */
+@media screen and (min-width: 1024px) {
+    .form-input::placeholder {
+        font-size: var(--text-14);
+    }
+}
+/* Media queries */

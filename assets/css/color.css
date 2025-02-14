@@ -1,0 +1,26 @@
+.primary-bg {
+    background-color: var(--color-primary) !important;
+    color: var(--color-white);
+}
+.primary-bg-hover {
+    background-color: var(--color-primary) !important;
+}
+.primary-bg-hover:hover {
+    background-color: var(--color-secondary) !important;
+}
+.secondary-bg {
+    background-color: var(--color-secondary) !important;
+    color: var(--color-black);
+}
+.secondary-bg-hover {
+    background-color: var(--color-secondary) !important;
+}
+.secondary-bg-hover:hover {
+    background-color: var(--color-secondary-hover) !important;
+}
+.white-bg {
+    background-color: var(--color-white);
+}
+.gray-bg {
+    background-color: var(--color-gray-background);
+}
