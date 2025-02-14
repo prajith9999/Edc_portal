@@ -1,0 +1,181 @@
+/* .table-wrapper::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+} */
+.table-wrapper[skeleton]::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.table-container {
+    border-collapse: collapse;
+    /* Added this due to vertical scrolling in table in clinical trials page */
+    /* overflow: hidden; */
+    overflow-y: hidden;
+    /* border: 0.1rem solid var(--color-black); */
+    @apply transition-all;
+}
+
+.table-header th,
+.table-footer th,
+.table-body tr {
+    @apply transition-all;
+}
+
+/* .table-header th,
+.table-body td {
+    border: 0.1rem solid var(--color-black);
+    padding: 0.5rem;
+    @apply transition-all;
+} */
+.table-header th,
+.table-footer th {
+    padding: 0.5rem;
+    max-width: 100%;
+    white-space: nowrap;
+    @apply transition-all;
+}
+
+table.default .table-header th:not(.colspan),
+table.sticky-header .table-header th:not(.colspan),
+table.sticky-columns .table-header th:not(.colspan),
+table.sticky-header-column .table-header th:not(.colspan) {
+    border-right: 0.1rem solid var(--color-gray-line);
+}
+
+/* table.outlined .table-header th */
+
+/* table.outlined .table-body td {
+    border-right: 0.1rem solid var(--color-gray-line);
+} */
+
+table.outlined .table-header th,
+table.outlined .table-footer th,
+table.outlined .table-body td {
+    padding: 1rem;
+    text-align: left;
+}
+
+table.default .right-border,
+table.sticky-header .right-border,
+table.sticky-columns .right-border,
+table.sticky-header-column .right-border {
+    border-right: 0.1rem solid var(--color-gray-line);
+}
+
+.table-container .table-header-divider {
+    border-bottom: 0.1rem solid var(--color-black);
+}
+
+table.outlined .table-header-divider {
+    border-bottom: 0.1rem solid var(--color-gray-line);
+}
+
+table.outlined {
+    border: 0.1rem solid var(--color-gray-line);
+}
+
+.table-body td {
+    padding: 0.5rem;
+    max-width: 100%;
+    white-space: nowrap;
+    border-bottom: 0.1rem solid var(--color-gray-line);
+}
+
+table.outlined .table-body tr:nth-last-child(1) td {
+    border-bottom: 0.1rem solid var(--color-gray-line);
+}
+
+/* .table-body td:last-child {
+    padding: 0.5rem;
+    width: 1%;
+    white-space: nowrap;
+} */
+
+table.default .table-header th:last-child,
+table.sticky-header .table-header th:last-child,
+table.sticky-columns .table-header th:last-child,
+table.sticky-header-column .table-header th:last-child {
+    border-right: none;
+}
+
+.table-header th {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-white);
+    z-index: 500;
+    color: var(--color-table-header);
+}
+
+/* table.sticky-columns thead.table-header {
+    position: sticky;
+    top: 0;
+    z-index: 500;
+} */
+
+/* table.sticky-header .table-body td {
+    position: sticky;
+    background-color: var(--color-white);
+    z-index: 500;
+} */
+
+.matrix-container .table-header th,
+.matrix-container .table-body td,
+.matrix-container .table-footer th {
+    border: 0.1rem solid var(--color-gray-line);
+    padding: 0.5rem;
+    @apply transition-all;
+}
+
+table.default .table-body td,
+table.sticky-header .table-body td,
+table.sticky-columns .table-body td,
+table.sticky-header-column .table-body td {
+    padding: 1rem;
+}
+
+/* Sticky header */
+table.sticky-header,
+table.sticky-columns,
+table.sticky-header-column {
+    border-collapse: initial;
+    border-spacing: 0;
+}
+
+table.sticky-header .table-body tr:first-child td {
+    border-top: 0.1rem solid var(--color-black);
+}
+
+table.sticky-header .table-body td,
+table.sticky-header-column .table-body td {
+    white-space: initial !important;
+}
+
+/* table.sticky-header .table-header th:nth-child(-n + 3) {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-white);
+    z-index: 503;
+}
+
+table.sticky-header th:nth-child(-n + 3),
+table.sticky-header td:nth-child(-n + 3) {
+    position: sticky;
+    background-color: #fff;
+}
+table.sticky-header th:nth-child(1),
+table.sticky-header td:nth-child(1) {
+    left: 0;
+    z-index: 503;
+}
+table.sticky-header th:nth-child(2),
+table.sticky-header td:nth-child(2) {
+    left: 10rem;
+    z-index: 502;
+}
+table.sticky-header th:nth-child(3),
+table.sticky-header td:nth-child(3) {
+    left: 30rem;
+    z-index: 501;
+} */
+/* Sticky header */

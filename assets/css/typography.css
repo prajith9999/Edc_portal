@@ -1,0 +1,123 @@
+.font-variety-roman {
+    font-family: "Avenir LT Std Roman", "Helvetica", sans-serif;
+}
+.font-variety-black {
+    font-family: "Avenir LT Std Black", "Helvetica", sans-serif;
+}
+/* Text color */
+.primary-text {
+    color: var(--color-primary);
+}
+.placeholder-text {
+    color: var(--color-placeholder);
+}
+/* Text color */
+.gray-text {
+    color: var(--color-gray-text);
+}
+.white-text {
+    color: var(--color-white);
+}
+.black-text {
+    color: var(--color-black);
+}
+.secondary-text {
+    color: var(--color-secondary);
+}
+.accent-text {
+    color: var(--color-accent);
+}
+.error-text {
+    color: var(--color-error);
+}
+.disabled-text {
+    color: var(--color-disabled);
+}
+/* Text color */
+/* Text dimensions */
+.font-10 {
+    font-size: var(--text-10);
+}
+.font-11 {
+    font-size: var(--text-11);
+}
+.font-12 {
+    font-size: var(--text-12);
+}
+.font-13 {
+    font-size: var(--text-13);
+}
+.font-14 {
+    font-size: var(--text-14);
+}
+.font-15 {
+    font-size: var(--text-15);
+}
+.font-16 {
+    font-size: var(--text-16);
+}
+.font-18 {
+    font-size: var(--text-18);
+}
+.font-24 {
+    font-size: var(--text-24);
+}
+.font-48 {
+    font-size: var(--text-48);
+}
+
+.dashboard-heading {
+    font-size: var(--text-18);
+}
+.dashboard-heading-alt {
+    font-size: 1.4rem;
+}
+.login-sub-message {
+    font-size: var(--text-13);
+}
+.login-portal-description {
+    font-size: var(--text-15);
+}
+.input-font {
+    font-size: var(--text-11);
+}
+.input-label-font {
+    font-size: var(--text-12);
+}
+.admin-input-font {
+    font-size: var(--text-12) !important;
+}
+.policy-link {
+    font-size: var(--text-11);
+}
+.form-menu-link {
+    font-size: var(--text-11);
+}
+
+@media screen and (min-width: 1024px) {
+    .dashboard-heading {
+        font-size: var(--text-24);
+    }
+    .dashboard-heading-alt {
+        font-size: 1.6rem;
+    }
+    .login-sub-message {
+        font-size: var(--text-16);
+    }
+    .login-portal-description {
+        font-size: var(--text-30);
+    }
+    .input-font {
+        font-size: var(--text-14);
+    }
+    .input-label-font {
+        font-size: var(--text-14);
+    }
+    .policy-link {
+        font-size: var(--text-13);
+    }
+    .form-menu-link {
+        font-size: var(--text-12);
+    }
+}
+/* Text dimensions */

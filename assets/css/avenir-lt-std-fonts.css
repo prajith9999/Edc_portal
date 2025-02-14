@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Avenir LT Std Book";
+    /* font-weight: 400;
+    font-style: normal; */
+    src:
+        /* local("Avenir LT Std"), */
+        /* url(../fonts/Roboto-Regular.ttf) format(""); */ url(../fonts/AvenirLTStd-Book.otf)
+        format("opentype");
+}
+@font-face {
+    font-family: "Avenir LT Std Roman";
+    src: url(../fonts/AvenirLTStd-Roman.otf) format("opentype");
+}
+@font-face {
+    font-family: "Avenir LT Std Black";
+    src: url(../fonts/AvenirLTStd-Black.otf) format("opentype");
+}
